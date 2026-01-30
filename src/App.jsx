@@ -4,8 +4,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { collection, onSnapshot, query, orderBy } from 'firebase/firestore';
 import { auth, db } from './firebase';
 
-
-// Component Imports
+// --- ALL IMPORTS FIXED ---
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProductCard from './components/ProductCard';
@@ -83,7 +82,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <div className="flex flex-col w-full">
-              {/* Banner Size Fixed Container */}
+              {/* FIXED BANNER CONTAINER */}
               <section className="w-full max-w-7xl mx-auto px-4 mt-4 overflow-hidden rounded-[2rem] md:rounded-[3rem]">
                 <Hero />
               </section>
@@ -130,11 +129,10 @@ function App() {
                   </div>
                 ) : (
                   <div className="text-center py-24 italic text-gray-300">
-                    No items found
+                    No items found in "{activeCategory}"
                   </div>
                 )}
               </main>
-
               <Footer />
             </div>
           } />
