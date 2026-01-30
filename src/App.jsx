@@ -4,6 +4,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { collection, onSnapshot, query, orderBy } from 'firebase/firestore';
 import { auth, db } from './firebase';
 
+
 // Component Imports
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
