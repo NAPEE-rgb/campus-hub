@@ -83,11 +83,11 @@ function App() {
           <Route path="/" element={
             <div className="flex flex-col w-full">
               {/* FIXED BANNER CONTAINER */}
-              <section className="w-full max-w-7xl mx-auto px-4 mt-4 overflow-hidden rounded-[2rem] md:rounded-[3rem]">
+              <section className="w-full max-w-7xl mx-auto px-4 mt-4 overflow-hidden  md:rounded-[3rem]">
                 <Hero />
               </section>
               
-              <div className="bg-white border-y border-gray-100 py-6 px-4 mt-6 sticky top-[56px] md:top-[64px] z-40 shadow-sm">
+              <div className="bg-white border-y border-gray-100 py-6 px-4 mt-6 sticky  z-40 shadow-sm">
                 <div className="max-w-7xl mx-auto">
                    <div className="relative mb-6 max-w-2xl mx-auto px-2">
                     <input 

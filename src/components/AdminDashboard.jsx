@@ -159,7 +159,7 @@ export default function AdminDashboard() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {filteredInventory.map(p => (
-                <div key={p.id} className="relative z-0 bg-gray-50 p-4 rounded-[2rem] border border-gray-100 transition-all duration-300 
+                <div key={p.id} className="relative z-0 bg-gray-50 p-4  border border-gray-100 transition-all duration-300 
                                           hover:z-50 hover:scale-[1.2] hover:shadow-2xl hover:bg-white
                                           active:z-50 active:scale-[1.2] active:shadow-2xl active:bg-white">
                   <img src={p.img} className="w-full h-24 object-cover rounded-2xl mb-4" />
@@ -206,7 +206,7 @@ export default function AdminDashboard() {
                       <td className="p-8 font-black text-gray-500">{o.phone || "---"}</td>
                       <td className="p-8 uppercase font-black italic">{o.location || "N/A"}</td>
                       <td className="p-8 relative">
-                         <div className="flex flex-col gap-1 w-[120px] transition-all duration-300 origin-left 
+                         <div className="flex flex-col gap-1 transition-all duration-300 origin-left 
                                        md:hover:scale-[1.8] md:hover:z-50 md:hover:bg-white md:hover:p-2 md:hover:rounded-xl md:hover:shadow-2xl
                                        active:scale-[1.4] active:z-50 active:bg-white active:p-2 active:rounded-xl active:shadow-2xl">
                             {o.items?.map((item, idx) => (
